@@ -1,65 +1,339 @@
-<!doctype html>
-<html lang="en-US">
-  <head>
-    <style>
-      ul#nav {
-        padding: 0;
-      }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Open Source SDN">
+    <meta name="author" content="Shivaram">
+    <meta name="keywords" content="Atrium, Faucet">
 
-      ul#nav li {
-        display: inline;
-      }
+    <title>ONF SDN</title>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/theme.css" rel="stylesheet">
+    <link href="css/bootstrap-reset.css" rel="stylesheet">
+    <!--external css-->
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/flexslider.css" />
+    <link href="assets/bxslider/jquery.bxslider.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/owlcarousel/owl.carousel.css">
+    <link rel="stylesheet" href="assets/owlcarousel/owl.theme.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet" />
 
-      ul#nav li a {
-        background-color: black;
-        color: white;
-        padding: 10px 20px;
-        text-decoration: none;
-        border-radius: 4px 4px 0 0;
-      }
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
 
-      ul#nav li a:hover {
-        background-color: #4CAF50;
-      }
-    </style>
-  
-    <link rel="icon" type="image/png" href="images/favicon.png"/>
-  <title>Openflow SDN Github Repository</title>
-  </head>
-  <body>
+</head>
 
-    <ul id="nav">
-        <li><img src="images/favicon.png" alt="OpenFlow SDN"></li>
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
-     </ul>
-     <br /> 
-     <br /> 
-    <h1>Openflow SDN Github Repository</h1>
+<body>
+    <!--header start-->
+    <header class="head-section">
+        <div class="navbar navbar-default navbar-static-top container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse"
+                    type="button">
+                    <span class="icon-bar"></span><span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+<img src="img/logo.png" width="200px" alt=""></a>
+            </div>
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover="dropdown"
+                            data-toggle="dropdown" href="#">Software <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Atrium</a>
+                            </li>
+                            <li>
+                                <a href="#">Steamboat(Faucet)</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                                      
+
+                       <li class="dropdown">
+                        <a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover="dropdown"
+                            data-toggle="dropdown" href="#">Documentation <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Quick Install</a>
+                            </li>
+                            <li>
+                                <a href="#">Wiki</a>
+                            </li>
+                        </ul>
+                    </li>
+
+<li class="dropdown">
+                        <a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover="dropdown"
+                            data-toggle="dropdown" href="#">Support <i class="fa fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#">Mailing lists</a>
+                            </li>
+                            <li>
+                                <a href="#">Commercial support</a>
+                            </li>
+                            <li>
+                                <a href="#">Feature requests & issues</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                                        <li></li>
+
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--header end-->
+
+    <div class="container">
+        <div class="row" id="slider">
+            <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                <!-- Bottom Carousel Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#quote-carousel" data-slide-to="1"></li>
+                    <li data-target="#quote-carousel" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Carousel Slides / Quotes -->
+                <div class="carousel-inner">
+
+                    <!-- Quote 1 -->
+                    <div class="item active">
+
+                        <img src="img/01.png" alt="">
+                    </div>
+                    <!-- Quote 2 -->
+                    <div class="item">
+
+                        <img src="img/02.png" alt="">
+                    </div>
+
+                    <!-- Quote 3 -->
+                    <div class="item">
+
+                        <img src="img/03.png" alt="">
+                    </div>
 
 
-    <h2>Projects:</h2>
-    <ol>
-      <li><a href="http://openflowsdn.github.io/atrium/">Atrium</a> - SDN Stack based on ONOS</li>
-      <li><a href="https://openflowsdn.github.io/faucet">Faucet</a> - part of Project Steamboat.</li>
-      <li><a href="https://github.com/OpenNetworkingFoundation/DURANGO">Durango</a> - 
-      OF-Config implementation for OpenVSwitch</li>
-    </ol>
 
-    <h2>3<sup>rd</sup> Party Code:</h2>
-    <ol>
-    <li>Openflow Driver Competition winner - LibFluid - 
-      <a href="https://github.com/OpenNetworkingFoundation/libfluid">libfluid</a>, 
-      <a href="https://github.com/OpenNetworkingFoundation/libfluid_base">libfluid_base</a>, 
-      <a href="https://github.com/OpenNetworkingFoundation/libfluid_msg">libfluid_msg</a>
-      </li>
-      <li><a href="https://github.com/OpenNetworkingFoundation/ofsoftswitch13">Openflow v1.3 soft switch</a> - 
-      The code is based on the Ericsson TrafficLab 1.1 softswitch 
-      <a href="https://github.com/TrafficLab/of11softswitch">implementation</a>, with changes in the forwarding 
-      plane to support OpenFlow 1.3</li>
-    </ol>
-      
-  </body>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+            <!-- end container -->
+        </section>
+        <!-- end map wrapper -->
+    </div>
+
+ <div class="container">
+
+
+      <div class="row mar-b-50">
+        <div class="col-md-12">
+          <div class="text-center feature-head wow fadeInDown">
+            <h2 class="">
+              Why use OpenSource SDN
+            </h2>
+
+          </div>
+
+
+          <div class="feature-box">
+            <div class="col-md-4 col-sm-4 text-center wow fadeInUp">
+              <div class="feature-box-heading">
+                <em>
+                <img src="img/1.png" alt="" width="100" height="100">
+
+                </em>
+                <h4>
+                  <b>Multi-Configuration</b>
+                </h4>
+              </div>
+              <p class="text-center">
+                Lorem ipsum dolor sit amet, dolore eiusmod quis tempor incididunt ut et dolore Ut veniam unde nostrudlaboris.
+              </p>
+            </div>
+            <div class="col-md-4 col-sm-4 text-center wow fadeInUp">
+              <div class="feature-box-heading">
+                <em>
+                  <img src="img/2.png" alt="" width="100" height="100">
+                </em>
+                <h4>
+                  <b>Well Documented</b>
+                </h4>
+              </div>
+              <p class="text-center">
+                Lorem ipsum dolor sit amet, dolore eiusmod quis tempor incididunt ut et dolore Ut veniam unde nostrudlaboris.
+              </p>
+            </div>
+            <div class="col-md-4 col-sm-4 text-center wow fadeInUp">
+              <div class="feature-box-heading">
+                <em>
+                  <img src="img/3.png" alt="" width="100" height="100">
+                </em>
+                <h4>
+                  <b>Rapid Deployment</b>
+                </h4>
+              </div>
+              <p class="text-center">
+                Lorem ipsum dolor sit amet, dolore eiusmod quis tempor incididunt ut et dolore Ut veniam unde nostrudlaboris.
+              </p>
+            </div>
+          </div>
+
+          <!--feature end-->
+        </div>
+        </div>
+
+
+    </div>
+
+    <div class="container">
+
+        <div id="home-services">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Need Support?
+                        </h2>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="h-service">
+                            <div class="icon-wrap ico-bg round-fifty wow fadeInDown">
+                                <i class="fa fa-question"></i>
+                            </div>
+                            <div class="h-service-content wow fadeInUp">
+                                <h3>Feature requests & issues
+                                </h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, dolore eiusmod quis tempor incididunt ut et dolore Ut veniam unde nostrudlaboris.
+                  <br>
+                                    <a href="#">Link
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="h-service">
+                            <div class="icon-wrap ico-bg round-fifty wow fadeInDown">
+                                <i class="fa fa-h-square"></i>
+                            </div>
+                            <div class="h-service-content wow fadeInUp">
+                                <h3>Commercial support
+                                </h3>
+                                <p>
+                                   Lorem ipsum dolor sit amet, dolore eiusmod quis tempor incididunt ut et dolore Ut veniam unde nostrudlaboris.
+                  <br>
+                                    <a href="#">Link
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="h-service">
+                            <div class="icon-wrap ico-bg round-fifty wow fadeInDown">
+                                <i class="fa fa-users"></i>
+                            </div>
+                            <div class="h-service-content wow fadeInUp">
+                                <h3>Mailing lists
+                                </h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, dolore eiusmod quis tempor incididunt ut et dolore Ut veniam unde nostrudlaboris.
+                  <br>
+                                    <a href="#">Link
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /row -->
+
+
+                <!--small footer start -->
+                <footer class="footer-small">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-6 pull-right">
+                                <ul class="social-link-footer list-unstyled">
+                                    <li class="wow flipInX" data-wow-duration="2s" data-wow-delay=".1s"><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                    <li class="wow flipInX" data-wow-duration="2s" data-wow-delay=".2s"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    <li class="wow flipInX" data-wow-duration="2s" data-wow-delay=".4s"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li class="wow flipInX" data-wow-duration="2s" data-wow-delay=".5s"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="copyright">
+                                    <p>&copy; 2015 Copyright - OpenSource SDN</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!--small footer end-->
+                <!-- <script src="js/track_order.js"></script>-->
+
+                <!-- js placed at the end of the document so the pages load faster -->
+                <script src="js/jquery.js"></script>
+                <script src="js/bootstrap.min.js"></script>
+                <script type="text/javascript" src="js/hover-dropdown.js"></script>
+                <script defer src="js/jquery.flexslider.js"></script>
+                <script type="text/javascript" src="assets/bxslider/jquery.bxslider.js"></script>
+                <script src="assets/owlcarousel/owl.carousel.js"></script>
+                <script src="js/jquery.easing.min.js"></script>
+                <script src="js/link-hover.js"></script>
+
+                <!--common script for all pages-->
+                <script src="js/common-scripts.js"></script>
+                <script type="text/javascript" src="js/wow.min.js"></script>
+
+                <!-- <script>
+                    $(document).ready(function () {
+
+                        $("#owl-demo").owlCarousel({
+                            items: 4
+                        });
+
+                    });
+                    new WOW().init();
+
+                    $("#topBarEmail").click(function (e) {
+                        debugger;
+                        $("#slider1").show();
+                        });
+
+                </script>-->
+
+                
+</body>
 </html>
